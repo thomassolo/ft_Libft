@@ -6,7 +6,7 @@
 /*   By: tsoloher <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:13:13 by tsoloher          #+#    #+#             */
-/*   Updated: 2023/11/01 10:33:11 by tsoloher         ###   ########.fr       */
+/*   Updated: 2023/11/07 15:30:02 by tsoloher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	ft_bzero(void *s, size_t n)
 	char	*c;
 
 	i = 0;
-	c = s;
-	while (i < n && c[i])
+	c = (char *)s;
+	while (i < n)
 	{
 		c[i] = 0;
 		i++;
